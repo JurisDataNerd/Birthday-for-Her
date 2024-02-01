@@ -1,0 +1,88 @@
+/* CSS untuk efek glass */
+.transparent-div {
+  /* animation: fadeIn 2s ease-in forwards; */
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.418);
+  padding: 40px 20px;
+  border-radius: 10px;
+  font-family: 'YourHandwritingFont', cursive; /* Gantilah 'YourHandwritingFont' dengan nama font tulisan bersambung yang Anda inginkan */
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .transparent-div{
+    width: 400px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .transparent-div{
+    width: 600px;
+    font-size: 18px;
+  }
+}
+#typeText{
+  margin: 3px 6px;
+}
+.outer{
+  top: 7%;
+  left: 20%;
+  box-shadow: 4px -4px 10px rgba(190, 189, 189, 0.3);
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  padding: 2px 4px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  padding: 2px 4px;
+  text-align: center;
+}
+.border{
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(243, 243, 243, 0.3); /* Efek bayangan dengan warna dan transparansi tertentu */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.transparent-div p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff; /* Warna teks dapat disesuaikan */
+}
+.sweetalert-glass {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+  }
+
+.sweetalert-size {
+  width: 600px;
+}
+
+  /* CSS untuk menyesuaikan tampilan title dan content */
+  .sweetalert-title {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Romanesco', cursive;
+    font-family: 'Satisfy', cursive;
+  }
+
+  .sweetalert-text {
+    color: #ffffff;
+  }
+
+  .swal2-html-container {
+    color: #ffffff;
+  }
